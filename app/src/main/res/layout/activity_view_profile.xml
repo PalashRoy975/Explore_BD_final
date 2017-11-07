@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+        <android.support.v7.widget.Toolbar
+        android:id="@+id/newsfeedToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:background="@color/colorPrimary"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        >
+
+        <TextView
+            android:id="@+id/barName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="18sp"
+            android:text="Personal Details"
+            android:gravity="center"
+            android:textColor="#FFFFFF"/>
+
+
+    </android.support.v7.widget.Toolbar>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="210dp"
+    android:orientation="vertical"
+    android:background="#ff4090">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+    <Button
+        android:id="@+id/btnPerBack"
+
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+
+        android:layout_alignParentLeft="true"
+
+        android:gravity="center_horizontal"
+
+        android:background="@drawable/ic_back" />
+    <Button
+        android:id="@+id/btnProfileEdit"
+
+        android:layout_width="42dp"
+        android:visibility="gone"
+        android:onClick="showPopUps"
+        android:layout_alignParentRight="true"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+
+        android:background="@drawable/ic_edit" />
+    </RelativeLayout>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgDP"
+        android:layout_marginTop="-5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="335dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        />
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Deb Sourav"
+        android:gravity="center"
+        android:textColor="#FFF"
+        android:textSize="20sp"
+        />
+
+
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:background="#FFF"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#505050"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:text="ABOUT ME"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+
+
+            />
+        <ImageView
+            android:layout_width="91dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginBottom="5dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/line2"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            >
+        <TextView
+
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:layout_marginRight="10dp"
+            android:text="Lives in"/>
+        <TextView
+            android:id="@+id/txtHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="15dp"
+            />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp">
+            <TextView
+
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:layout_marginRight="10dp"
+                android:text="Age"/>
+            <TextView
+                android:id="@+id/txtAge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textSize="15dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp">
+            <TextView
+
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:layout_marginRight="10dp"
+                android:text="Works  as"/>
+            <TextView
+                android:id="@+id/txtWork"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textSize="15dp"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp">
+            <TextView
+
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:layout_marginRight="10dp"
+                android:text="Studied in"/>
+            <TextView
+                android:id="@+id/txtStudy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textSize="15dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp">
+            <TextView
+
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:layout_marginRight="10dp"
+                android:text="Interest"/>
+            <TextView
+                android:id="@+id/txtInterest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textSize="15dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp">
+            <TextView
+
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:layout_marginRight="10dp"
+                android:text="Email"/>
+            <TextView
+                android:id="@+id/txtEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textSize="15dp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+    </ScrollView>

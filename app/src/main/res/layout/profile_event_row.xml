@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:id="@+id/cardView"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:clickable="true"
+        >
+
+        <ImageView
+            android:id="@+id/postImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:background="@mipmap/add_btn"
+            app:srcCompat="@mipmap/add_btn" />
+        <TextView
+            android:id="@+id/postTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Place"
+            android:textSize="16sp"
+
+            android:textColor="@color/colorPrimary"
+            android:padding="15sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/postUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="UserName"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:paddingLeft="15sp"
+            android:paddingRight="15sp"
+            android:paddingBottom="12sp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:paddingLeft="15sp"
+                android:paddingRight="15sp"
+                android:paddingBottom="10sp"
+                />
+            <TextView
+                android:id="@+id/postDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:textSize="16sp"
+                android:paddingLeft="15sp"
+                android:paddingRight="15sp"
+                android:paddingBottom="10sp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Duration"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:paddingLeft="15sp"
+                android:paddingRight="15sp"
+                android:paddingBottom="9sp"
+                />
+
+            <TextView
+                android:id="@+id/postDuration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:textSize="16sp"
+                android:paddingLeft="15sp"
+                android:paddingRight="15sp"
+                android:paddingBottom="9sp"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/expand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="5"
+            android:visibility="gone"
+            >
+            <EditText
+                android:id="@+id/fldComment"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Post a comment"
+                android:textSize="18sp"
+                android:layout_margin="10sp"
+                />
+
+            <Button
+                android:id="@+id/postComment"
+                android:layout_width="match_parent"
+                android:layout_height="35sp"
+                android:layout_gravity="center"
+                android:text="Post"
+                android:background="@color/colorPrimary"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:layout_weight="4"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

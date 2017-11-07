@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/hotelToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="45sp"
+            android:background="@color/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+
+            android:weightSum="1">
+
+            <TextView
+                android:text="Hotels"
+                android:id="@+id/barName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="22sp"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:layout_weight="1.03" />
+
+
+        </android.support.v7.widget.Toolbar>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+
+            <EditText
+                android:drawableLeft="@drawable/ic_search_black_24dp"
+
+                android:layout_width="155dp"
+                android:paddingTop="14dp"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content"
+                android:editable="false"/>
+
+        <Spinner
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/hotels_details"
+            android:paddingTop="15dp"
+            android:layout_alignParentRight="true"
+            android:textAlignment="center"
+            android:entries="@array/hotels_array">
+
+        </Spinner>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/blog_list">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

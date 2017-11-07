@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:id="@+id/blogCardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginBottom="10dp"
+    card_view:cardCornerRadius="5dp"
+    card_view:contentPadding="25dp"
+    card_view:cardBackgroundColor="#d5efd4"
+    card_view:cardElevation="6dp"
+    card_view:cardMaxElevation="10dp"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/blogImage"
+            android:layout_width="350dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:background="@mipmap/add_btn"
+            android:scaleType="fitCenter"
+            app:srcCompat="@mipmap/add_btn" />
+
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="Place"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimary"
+            android:paddingLeft="15sp"
+            android:paddingRight="15sp"
+            android:paddingTop="15sp"
+            android:paddingBottom="8sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/UserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_info_black2"
+            android:text="UserName"
+            android:textSize="12sp"
+            android:textColor="#3f3f3f"
+            android:textStyle="bold"
+            android:paddingLeft="15sp"
+            android:paddingRight="15sp"
+            android:paddingBottom="8sp"/>
+
+
+        <LinearLayout
+            android:id="@+id/Ratings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TourguideDetails"
+            android:orientation="horizontal">
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                style="@android:style/Widget.DeviceDefault.RatingBar.Indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15sp"
+                android:paddingRight="15sp"
+                android:paddingBottom="8sp"
+                 />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Tourdesc">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Experience"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:paddingLeft="15sp"
+                android:paddingRight="15sp"
+                android:paddingBottom="9sp"
+                />
+
+            <TextView
+                android:id="@+id/Tdesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:textSize="16sp"
+                android:paddingLeft="15sp"
+                android:paddingRight="15sp"
+                android:paddingBottom="9sp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layoutLikeComments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageButton
+                android:id="@+id/like"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_like_grey"
+                android:background="#FFF"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="3dp"
+                android:layout_gravity="center"
+                />
+            <TextView
+                android:id="@+id/blognoLikes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textColor="#f61b0a"
+
+                android:layout_marginTop="1sp"
+                android:layout_marginLeft="2sp"
+
+                android:layout_marginBottom="8sp"
+                android:gravity="center"
+                android:textSize="17sp"
+                />
+            <Button
+                android:id="@+id/Blogcomment"
+                android:layout_width="wrap_content"
+                android:layout_height="30sp"
+                android:text="Comment"
+                android:gravity="center"
+                android:background="@color/colorPrimary"
+                android:textColor="#FFFFFF"
+
+                android:layout_marginLeft="10sp"
+                android:layout_marginBottom="5sp"
+                />
+            <Button
+                android:id="@+id/BlogseeComments"
+                android:layout_width="wrap_content"
+                android:layout_height="30sp"
+                android:text="See Comments"
+                android:gravity="center"
+                android:background="@color/colorPrimary"
+                android:textColor="#FFFFFF"
+
+                android:layout_marginLeft="10sp"
+                android:layout_marginBottom="5sp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Blogexpand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:weightSum="5">
+
+            <EditText
+                android:id="@+id/BlogfldComment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:layout_weight="1"
+                android:hint="Post a comment"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/BlogpostComment"
+                android:layout_width="match_parent"
+                android:layout_height="35sp"
+                android:layout_gravity="center"
+                android:layout_weight="4"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:text="Post"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>

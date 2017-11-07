@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/street2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        >
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/newsfeedToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="38sp"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            >
+
+            <TextView
+                android:id="@+id/barName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Explore BD"
+                android:textSize="21sp"
+                android:gravity="center"
+                android:textColor="#FFFFFF"/>
+
+
+        </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10sp"
+            >
+
+            <Button
+                android:id="@+id/events"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+
+
+                android:text="Events"
+
+                />
+
+            <Button
+                android:id="@+id/crtBlog"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+
+                android:text="Blogs"
+
+                />
+
+
+            <Button
+                android:id="@+id/myProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+
+                android:text="My Profile"
+
+                />
+
+
+
+            <Button
+                android:id="@+id/logout"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Logout"
+
+                />
+
+
+
+        <Button
+            android:id="@+id/edit"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Edit Details"
+
+            />
+
+        <Button
+            android:id="@+id/myInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="personal Infos"
+
+            />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>

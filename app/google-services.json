@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "660887781211",
+    "firebase_url": "https://du-fall.firebaseio.com",
+    "project_id": "du-fall",
+    "storage_bucket": "du-fall.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:660887781211:android:949cb685a2c4e746",
+        "android_client_info": {
+          "package_name": "deb.com.firebasedemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "660887781211-6v4q4ft3du7kb4gp09vhn6jo25i6lqo5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "deb.com.firebasedemo",
+            "certificate_hash": "32e4d80cfd0b969c7af075a44398c17c12f53bde"
+          }
+        },
+        {
+          "client_id": "660887781211-t00lhga5mv0jo3unfg503kbjm1h4jsg9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZK82vc2kYrj3Ff0Mznwz6qaLGdQDWlnc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "660887781211-t00lhga5mv0jo3unfg503kbjm1h4jsg9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="deb.com.firebasedemo.Tools"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/newsfeedToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="45sp"
+        android:background="?attr/colorPrimary"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        >
+
+        <TextView
+            android:id="@+id/barName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="22sp"
+            android:text="Choose BackGround"
+            android:gravity="center"
+            android:textColor="#FFFFFF"/>
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <RadioGroup
+        android:id="@+id/rdGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rdGrass"
+            android:onClick="rbclick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Field"
+            android:layout_marginRight="10dp"/>
+        <RadioButton
+            android:id="@+id/rdStreet"
+            android:onClick="rbclick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="Rain"/>
+        <RadioButton
+            android:id="@+id/rdBlur"
+            android:onClick="rbclick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="Flower"
+            />
+        <RadioButton
+            android:id="@+id/rdNone"
+            android:onClick="rbclick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="None"
+            />
+
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/choosePic"
+        android:layout_gravity="center"
+        android:scaleType="fitXY"
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:src="@mipmap/background4"
+        />
+
+    <Button
+        android:id="@+id/saveBack"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save As Background"
+        android:background="@color/colorPrimary"
+        android:textColor="#FFFFFF"/>
+
+</LinearLayout>

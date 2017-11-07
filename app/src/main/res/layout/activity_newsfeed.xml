@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp">
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter the place "
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="20dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/placelayout"
+        android:layout_below="@+id/editTextName">
+
+        <TextView
+            android:id="@+id/placeType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Type"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginLeft="5sp"
+            />
+
+      <Spinner
+        android:id="@+id/spinnerGenre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Select place type "
+        android:entries="@array/generis"
+        android:layout_marginLeft="35sp"
+        />
+
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/seasonview"
+    android:layout_below="@+id/placelayout">
+    <TextView
+        android:id="@+id/season"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Season"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginLeft="5sp"
+        />
+    <Spinner
+        android:id="@+id/preferableSeason"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/seasons"
+        android:layout_marginLeft="20sp"
+        />
+</LinearLayout>
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginLeft="5sp"
+        android:textSize="20dp"
+        android:layout_below="@+id/seasonview"
+        android:text="Expenditure" />
+    <TextView
+        android:id="@+id/Tourguide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:textSize="20dp"
+        android:textColor="@color/colorAccent"
+        android:text="Tour Guide Details"
+        android:layout_marginLeft="5sp"
+        android:visibility="visible" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/GuideName"
+    android:layout_below="@+id/Tourguide">
+    <TextView
+        android:id="@+id/Guidename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginLeft="5sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@+id/seasonview"
+        android:text="Name" />
+    <EditText
+        android:id="@+id/TourguideName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Tourguide"
+        android:layout_marginLeft="20sp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/GuideNo"
+        android:layout_below="@+id/GuideName">
+        <TextView
+            android:id="@+id/Guideno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginLeft="5sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_below="@+id/seasonview"
+            android:text="Contact No" />
+        <EditText
+            android:id="@+id/TourguideNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Tourguide"
+            android:layout_marginLeft="20sp"
+            android:ems="10"
+            android:inputType="textPersonName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/GuideDescrip"
+        android:layout_below="@+id/GuideNo">
+        <TextView
+            android:id="@+id/Guidedescrib"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginLeft="5sp"
+
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_below="@+id/seasonview"
+            android:text="Description" />
+        <EditText
+            android:id="@+id/Tourguidedescrib"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Tourguide"
+            android:layout_marginLeft="20sp"
+            android:ems="10"
+            android:inputType="textPersonName" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Ratings"
+        android:layout_below="@+id/GuideDescrip">
+        <TextView
+            android:id="@+id/rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginLeft="5sp"
+            android:layout_marginTop="18dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_below="@+id/seasonview"
+            android:text="Tour Ratings" />
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25sp"
+            android:layout_below="@+id/Guide_describe"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            />
+
+
+    </LinearLayout>
+
+
+
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Post"
+        android:layout_below="@+id/Ratings"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="110dp"
+        android:background="@color/colorPrimaryDark"
+
+      />
+    <Button
+        android:id="@+id/btnFinish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Finish"
+        android:layout_below="@+id/Ratings"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="110dp"
+        android:background="@color/colorPrimaryDark"
+
+        />
+
+
+</RelativeLayout>

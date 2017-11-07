@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="deb.com.firebasedemo.NewsFeed"
+    android:id="@+id/newsfeed_background"
+    android:background="#fbfbfb"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/newsfeedToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="45sp"
+        android:background="@color/colorPrimary"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:id="@+id/barName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="22sp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"/>
+
+
+    </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:id="@+id/layoutPost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingBottom="4dp"
+            android:paddingTop="4dp"
+            android:background="@color/colorPrimaryDark"
+
+
+            >
+
+            <Button
+                android:id="@+id/btnGoPostEvent"
+                android:layout_width="35sp"
+                android:layout_height="35sp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/add_post"
+                android:layout_marginRight="10sp"/>
+            <TextView
+                android:id="@+id/txtGoPostEvent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:text="Post a Event"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+
+        android:id="@+id/rView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+</RelativeLayout>

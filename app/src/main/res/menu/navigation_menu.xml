@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/drawer_account"
+        android:icon="@drawable/ic_settings"
+        android:title="Account Settings"
+        ></item>
+    <item
+        android:id="@+id/drawer_details"
+        android:icon="@drawable/ic_details"
+        android:title="Personal Details"
+        ></item>
+    <item
+        android:id="@+id/drawer_notification"
+        android:icon="@drawable/ic_notification"
+        android:title="Notifications"
+        ></item>
+
+
+    <item
+        android:id="@+id/drawer_tools"
+        android:icon="@drawable/ic_tools"
+        android:title="Tools"
+        ></item>
+    <item
+        android:id="@+id/drawer_credits"
+        android:icon="@drawable/ic_credit"
+        android:title="Credits"
+        ></item>
+
+
+    <item
+        android:id="@+id/drawer_logout"
+        android:icon="@drawable/ic_logout"
+        android:title="Logout"
+        ></item>
+
+
+
+</menu>

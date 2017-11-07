@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="deb.com.firebasedemo.ActivityPost"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/newsfeedToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="38sp"
+        android:background="?attr/colorPrimary"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        >
+
+        <TextView
+            android:id="@+id/barName2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Edit Details"
+            android:textSize="21sp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"/>
+
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="15sp"
+        >
+
+
+
+        <ImageButton
+            android:id="@+id/dpSelect"
+            android:src="@drawable/user3"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:maxLines="1"
+
+            />
+
+        <EditText
+            android:id="@+id/fldName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12sp"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:hint="Name"
+            android:maxLines="1"
+
+            />
+
+        <EditText
+            android:id="@+id/fldAge"
+            android:layout_width="match_parent"
+            android:textSize="15sp"
+            android:layout_height="wrap_content"
+            android:padding="12sp"
+            android:hint="Age"
+            android:inputType="number"
+            android:maxLines="1"/>
+
+        <EditText
+            android:id="@+id/fldHome"
+            android:layout_width="match_parent"
+            android:textSize="15sp"
+            android:layout_height="wrap_content"
+            android:padding="12sp"
+            android:hint="Current City"
+            android:maxLines="1"
+            />
+        <EditText
+            android:id="@+id/fldWork"
+            android:layout_width="match_parent"
+            android:textSize="15sp"
+            android:layout_height="wrap_content"
+            android:padding="12sp"
+            android:hint="Profession"
+            android:maxLines="1"
+            />
+        <EditText
+            android:id="@+id/fldStudy"
+            android:layout_width="match_parent"
+            android:textSize="15sp"
+            android:layout_height="wrap_content"
+            android:padding="12sp"
+            android:hint="Last Educational Institute"
+            android:maxLines="1"
+            />
+        <EditText
+            android:id="@+id/fldInterest"
+            android:layout_width="match_parent"
+            android:textSize="15sp"
+            android:layout_height="wrap_content"
+            android:padding="12sp"
+            android:hint="Area Of Interest"
+            android:maxLines="1"
+            />
+
+
+        <Button
+            android:layout_marginTop="10sp"
+            android:id="@+id/btnAddDetails"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textColor="#ffffff"
+            android:background="@color/colorPrimary"
+            android:layout_marginBottom="10dp"
+            android:text="Proceed" />
+        <Button
+            android:layout_marginTop="10sp"
+            android:id="@+id/btnGoHome"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textColor="#ffffff"
+            android:background="@color/colorPrimary"
+            android:layout_marginBottom="20dp"
+            android:text="Go To Home" />
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>

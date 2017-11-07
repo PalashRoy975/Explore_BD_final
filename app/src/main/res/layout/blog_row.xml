@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginBottom="10dp"
+    android:id="@+id/cardView"
+    card_view:cardCornerRadius="5dp"
+    card_view:contentPadding="25dp"
+    card_view:cardBackgroundColor="#d5efd4"
+    card_view:cardElevation="6dp"
+    card_view:cardMaxElevation="10dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:clickable="true"
+        >
+
+        <ImageView
+            android:id="@+id/postImage"
+            android:clickable="true"
+            android:layout_width="350dp"
+            android:layout_height="200dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/street2"
+            android:adjustViewBounds="true"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:id="@+id/postTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Place"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimary"
+            android:paddingLeft="15sp"
+            android:paddingRight="15sp"
+            android:paddingTop="15sp"
+            android:paddingBottom="8sp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp">
+        <TextView
+            android:id="@+id/postUser"
+            android:drawableRight="@drawable/ic_info_black2"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="UserName"
+            android:textSize="12sp"
+            android:textColor="#3f3f3f"
+            android:textStyle="bold"
+            android:paddingLeft="15sp"
+            android:paddingRight="10sp"
+            android:paddingBottom="10sp"
+
+
+            />
+            <TextView
+                android:id="@+id/postTime"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="(22:15 03 Nov,2018)"
+                android:autoSizeTextType="uniform"
+                android:textSize="12sp"
+                android:textColor="#656565"
+                android:textStyle="bold"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:paddingLeft="15sp"
+                android:paddingRight="15sp"
+                android:paddingBottom="8sp"
+                />
+        <TextView
+            android:id="@+id/postDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:textSize="16sp"
+            android:paddingLeft="15sp"
+            android:paddingRight="15sp"
+            android:paddingBottom="8sp"
+            />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Duration"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:paddingLeft="15sp"
+            android:paddingRight="15sp"
+            android:paddingBottom="9sp"
+            />
+
+            <TextView
+                android:id="@+id/postDuration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:textSize="16sp"
+                android:paddingLeft="15sp"
+                android:paddingRight="15sp"
+                android:paddingBottom="9sp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layoutLikeComments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageButton
+                android:id="@+id/like_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+                app:srcCompat="@drawable/ic_like_grey"
+                android:background="#FFF"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="3dp"
+                android:layout_gravity="center"
+                />
+        <TextView
+            android:id="@+id/noLikes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textColor="#f61b0a"
+
+            android:layout_marginTop="1sp"
+            android:layout_marginLeft="2sp"
+
+            android:layout_marginBottom="8sp"
+            android:gravity="center"
+            android:textSize="17sp"
+            />
+        <Button
+            android:id="@+id/comment"
+            android:layout_width="wrap_content"
+            android:layout_height="30sp"
+            android:text="Comment"
+            android:gravity="center"
+            android:background="@color/colorPrimary"
+            android:textColor="#FFFFFF"
+
+            android:layout_marginLeft="10sp"
+            android:layout_marginBottom="5sp"
+            />
+            <Button
+                android:id="@+id/seeComments"
+                android:layout_width="wrap_content"
+                android:layout_height="30sp"
+                android:text="See Comments"
+                android:gravity="center"
+                android:background="@color/colorPrimary"
+                android:textColor="#FFFFFF"
+
+                android:layout_marginLeft="10sp"
+                android:layout_marginBottom="5sp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/expand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="5"
+            android:visibility="gone"
+            >
+        <EditText
+            android:id="@+id/fldComment"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Post a comment"
+            android:textSize="18sp"
+            android:layout_margin="10sp"
+            />
+
+            <Button
+                android:id="@+id/postComment"
+                android:layout_width="match_parent"
+                android:layout_height="35sp"
+                android:layout_gravity="center"
+                android:text="Post"
+                android:background="@color/colorPrimary"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:layout_weight="4"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/street2"
+    android:gravity="center">
+
+    <EditText
+        android:id="@+id/newEmail"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="60dp"
+        android:textColor="#ffffff"
+        android:textColorHint="#d9d9d9"
+
+        android:hint="Email"
+
+        />
+
+    <EditText
+        android:id="@+id/newPass"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="30dp"
+        android:textColor="#ffffff"
+        android:textColorHint="#d9d9d9"
+        android:inputType="textPassword"
+        android:hint="New Password"
+
+
+        />
+
+    <EditText
+        android:id="@+id/confirmPass"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="30dp"
+        android:textColor="#ffffff"
+        android:textColorHint="#d9d9d9"
+        android:inputType="textPassword"
+        android:hint="Confirm Password"
+
+
+        />
+    <Button
+
+        android:id="@+id/btnSignUp"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="45dp"
+        android:layout_marginTop="30dp"
+        android:text="Create Account"
+
+        />
+
+
+</LinearLayout>

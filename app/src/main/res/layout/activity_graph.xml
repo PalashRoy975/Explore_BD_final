@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/blogfeedToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="45sp"
+            android:background="@color/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+
+            android:weightSum="1">
+
+            <TextView
+                android:text="Expenditure"
+                android:id="@+id/barName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="22sp"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:layout_weight="1.03" />
+
+
+        </android.support.v7.widget.Toolbar>
+
+
+    <LinearLayout
+        android:id="@+id/cost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+
+
+
+        <LinearLayout
+            android:id="@+id/graphfood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/foodtxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Food Cost:         " />
+
+            <TextView
+                android:id="@+id/fooddata"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="d"
+                android:textColor="@color/colorPrimaryDark" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/graphResort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/resorttxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Resort Cost:       " />
+
+            <TextView
+                android:id="@+id/resortdata"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="d"
+                android:textColor="@color/colorPrimaryDark" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/graphVehicle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/vehicletxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vehicle Cost:     " />
+
+            <TextView
+                android:id="@+id/Vehicledata"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="d"
+                android:textColor="@color/colorPrimaryDark" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/graphothers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/otherstxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Other Cost:         " />
+
+            <TextView
+                android:id="@+id/otherdata"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="d"
+                android:textColor="@color/colorPrimaryDark" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/graphGuide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/guidetxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Guide Cost:        " />
+
+            <TextView
+                android:id="@+id/guidedata"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="d"
+                android:textColor="@color/colorPrimaryDark" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    </LinearLayout>
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/Piegraph"
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></com.github.mikephil.charting.charts.PieChart>
+
+
+</RelativeLayout>

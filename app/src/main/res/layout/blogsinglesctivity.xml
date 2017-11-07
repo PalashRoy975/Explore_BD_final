@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ad.firebaseapp.BlogSingleActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/blogDetToolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="40sp"
+                    android:background="@color/colorPrimary"
+                    app:layout_scrollFlags="scroll|enterAlways"
+                    app:popupTheme="@style/AppTheme.PopupOverlay"
+
+                    android:weightSum="1">
+
+                    <TextView
+                        android:text="Blog Details"
+                        android:id="@+id/barName4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="20sp"
+                        android:gravity="center"
+                        android:textColor="#FFFFFF" />
+
+
+                </android.support.v7.widget.Toolbar>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:clickable="true"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/blogImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12sp"
+                    android:adjustViewBounds="true"
+                    android:background="@mipmap/add_btn"
+                    app:srcCompat="@mipmap/add_btn" />
+
+                <TextView
+                    android:id="@+id/textViewName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15sp"
+                    android:text="TextView"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="30dp" />
+
+                <TextView
+                    android:id="@+id/UserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15sp"
+                    android:text="User_name"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp" />
+
+                <LinearLayout
+                    android:id="@+id/placedistrict"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewName"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/district"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="15sp"
+                        android:text="District : "
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                        android:textColor="#000000"
+                        android:textSize="20dp"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/textViewDistrict"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="district"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                        android:textSize="20dp"
+                        android:visibility="visible" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/placetype"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/placedistrict"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/Place"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="15sp"
+                        android:text="Type : "
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                        android:textColor="#000000"
+                        android:textSize="20dp"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/textViewGenere"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="Type"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                        android:textSize="20dp"
+                        android:visibility="visible" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/placetype"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/prefseason"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="15sp"
+                        android:text="Preferable Season :"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                        android:textColor="#000000"
+                        android:textSize="20dp"
+                        android:visibility="visible" />
+
+                    <TextView
+
+                        android:id="@+id/textViewSeason"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="TextView"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                        android:textSize="20dp"
+                        android:visibility="visible" />
+
+
+                </LinearLayout>
+                <Button
+                    android:id="@+id/btnExpend"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_gravity=""
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="5sp"
+                    android:background="@color/colorPrimary"
+                    android:text="Expenditures Graph"
+                    android:textColor="#FFF" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/TOURGUIDE"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="15sp"
+                        android:text="TOUR GUIDE"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="25dp"
+                        android:textStyle="bold"
+                        android:visibility="visible" />
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/TourguideName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/TOURGUIDE"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/Guide_Name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="15sp"
+                        android:text="Name : "
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                        android:textSize="20dp"
+                        android:visibility="visible" />
+
+                    <TextView
+
+                        android:id="@+id/Gname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="TextView"
+                        android:paddingLeft="78sp"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                        android:textSize="20dp"
+                        android:visibility="visible" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/TourguideNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/TourguideName"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/Guide_No"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="15sp"
+                        android:text="Contact No : "
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+
+                        android:textSize="20dp"
+                        android:visibility="visible" />
+
+                    <TextView
+
+                        android:id="@+id/Gno"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="TextView"
+                        android:paddingLeft="35sp"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                        android:textSize="20dp"
+                        android:visibility="visible" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/TourguideDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/TourguideNo"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/Guide_Details"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="15sp"
+                        android:text="Description : "
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                        android:textSize="20dp"
+                        android:visibility="visible" />
+
+                    <TextView
+
+                        android:id="@+id/GDesc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="TextView"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                        android:paddingLeft="35sp"
+                        android:textSize="20dp"
+                        android:visibility="visible" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Ratings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/TourguideDetails"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/Tour_rate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="18dp"
+                        android:paddingLeft="15sp"
+                        android:text="Rating : "
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                        android:textSize="20dp"
+                        android:visibility="visible" />
+
+                    <RatingBar
+                        android:id="@+id/SingleratingBar"
+                        style="@android:style/Widget.DeviceDefault.RatingBar.Indicator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="5sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Tourdesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/TourguideNo"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/TourDesc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="15sp"
+                        android:text="Experience : "
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                        android:textSize="20dp"
+                        android:visibility="visible" />
+
+                    <TextView
+
+                        android:id="@+id/Tdesc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="TextView"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                        android:textSize="20dp"
+                        android:visibility="visible" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

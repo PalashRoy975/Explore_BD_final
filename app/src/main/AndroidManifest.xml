@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="deb.com">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo3"
+        android:label="ExploreBD"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyALgph00-cAncQKgQVIx-QK10PjTndLo2c" />
+
+        <!-- AIzaSyALgph00-cAncQKgQVIx-QK10PjTndLo2c -->
+        <activity android:name=".firebasedemo.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".showinghotels.HotelMainActivity" />
+        <activity android:name=".firebaseapp.Searching" />
+        <activity android:name=".firebasedemo.HomePage" />
+        <activity android:name=".firebasedemo.ViewProfile" />
+        <activity android:name=".firebasedemo.AddUserDetails" />
+        <activity android:name=".firebasedemo.NavTest" />
+        <activity android:name=".firebasedemo.Tools" />
+        <activity android:name=".firebasedemo.Notifications" />
+        <activity android:name=".firebasedemo.Credits" />
+        <activity android:name=".firebasedemo.LoggedIn" />
+        <activity android:name=".firebasedemo.EditProfile" />
+        <activity android:name=".firebasedemo.CreateAccount" />
+        <activity android:name=".firebasedemo.SeeProfile" />
+        <activity android:name=".firebasedemo.ActivityPost" />
+        <activity android:name=".firebasedemo.Profile" />
+        <activity android:name=".firebasedemo.EventDetails" />
+        <activity android:name=".firebasedemo.MainProfile" />
+        <activity android:name=".firebaseapp.ActivityBlogPost" />
+        <activity android:name=".firebaseapp.Blog_Feed" />
+        <activity android:name=".firebaseapp.BlogCommentDetails" />
+        <activity android:name=".firebaseapp.BlogSingleActivity" />
+        <activity android:name=".firebaseapp.DatePicker" />
+        <activity android:name=".firebaseapp.Expenditure" />
+        <activity android:name=".firebaseapp.graph" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity
+            android:name="firebasedemo.TabProfile"
+            android:label="@string/title_activity_tab_profile"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="firebasedemo.TabMap"
+            android:label="@string/title_activity_tab_map"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".firebaseapp.Fragment_MyBlogs"></activity>
+    </application>
+
+</manifest>
